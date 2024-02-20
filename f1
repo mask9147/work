@@ -1,5 +1,6 @@
 #!/bin/bash
-
+#commit1
+#dev changes commit dev1
 #commit2
 #code edit after  1st merge
 echo "welcoe to GITHUB"
