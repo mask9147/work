@@ -7,7 +7,7 @@ pipeline{
         cleanWS()
         echo 'Hello world'
               sh mkdir ABC
-        ls -lart
+        sh ls -lart
               sh pwd
       }
     }
@@ -15,12 +15,12 @@ pipeline{
       agent { 
       label 'java'
             }
-            steps {
-                cleanWs()
-                echo 'Hello World'
-		        sh 'mkdir abc'
-	            sh 'ls -lart'
-		        sh 'pwd'
+      steps {
+        cleanWs()
+        echo 'Hello World'
+	      sh 'mkdir abc'
+	sh 'ls -lart'
+		sh 'pwd'
            }
     }
   }
