@@ -6,9 +6,9 @@ pipeline{
       steps {
         cleanWS()
         echo 'Hello world'
-              sh mkdir ABC
-        sh ls -lart
-              sh pwd
+        sh 'mkdir ABC'
+        sh 'ls -lart'
+        sh 'pwd'
       }
     }
     stage('Test on Java') {
@@ -18,10 +18,10 @@ pipeline{
       steps {
         cleanWs()
         echo 'Hello World'
-	      sh 'mkdir abc'
+	sh 'mkdir abc'
 	sh 'ls -lart'
-		sh 'pwd'
-           }
+	sh 'pwd'
+        }
     }
   }
 }
